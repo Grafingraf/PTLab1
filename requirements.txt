@@ -1,0 +1,4 @@
+mypy
+pyyaml
+pytest
+pycodestyle
