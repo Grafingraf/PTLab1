@@ -22,14 +22,14 @@ class TestStudents3Q():
         }
         return rating_scores, student_list
 
-    def test_init_get_students_3q(self, input_data:
+    def test_init_get_students_4q(self, input_data:
                                   Tuple[RatingsType, RatingsType]) -> None:
-        rating_scores = GetStudents3Q(input_data[0])
+        rating_scores = GetStudents4Q(input_data[0])
         assert input_data[0] == rating_scores.rating
 
     def test_get(self, input_data:
                  Tuple[DataType, RatingsType]) -> None:
-        student_list = GetStudents3Q(input_data[0]).get()
+        student_list = GetStudents4Q(input_data[0]).get()
         for student in student_list.keys():
             rating = student_list[student]
             assert pytest.approx(
