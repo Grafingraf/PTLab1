@@ -1,7 +1,7 @@
 from typing import Dict, Tuple
 from Types import DataType
 from CalcRating import CalcRating
-from GetStudents3Q import GetStudents3Q
+from GetStudents4Q import GetStudents4Q
 import pytest
 RatingsType = Dict[str, float]
 
