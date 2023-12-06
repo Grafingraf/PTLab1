@@ -6,19 +6,19 @@ import pytest
 RatingsType = Dict[str, float]
 
 
-class TestStudents3Q():
+class TestStudents4Q():
     @pytest.fixture()
     def input_data(self) -> Tuple[DataType, RatingsType]:
         rating_scores: RatingsType = {
             'Иванов Иван Иванович': 82.0,
-            'Петров1 Петр Петрович': 63.333333333333336,
-            'Петров2 Петр Петрович': 76.0,
-            'Петров3 Петр Петрович': 89.33333333333333,
-            'Петров4 Петр Петрович': 91.66666666666667
+            'Матроскин Алексей Петрович': 63.0,
+            'Петров Петр Петрович': 76.0,
+            'Васильев Валерий Петрович': 89.0,
+            'Маруськин Игорь Петрович': 92.0
         }
         student_list: RatingsType = {
             'Иванов Иван Иванович': 82.0,
-            'Петров3 Петр Петрович': 89.33333333333333
+            'Васильев Валерий Петрович': 89.0
         }
         return rating_scores, student_list
 
