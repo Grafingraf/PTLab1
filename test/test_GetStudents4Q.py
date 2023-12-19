@@ -18,7 +18,8 @@ class TestStudents4Q():
         }
         student_list: RatingsType = {
             'Иванов Иван Иванович': 82.0,
-            'Васильев Валерий Петрович': 89.0
+            'Васильев Валерий Петрович': 89.0,
+            'Маруськин Игорь Петрович': 92.0
         }
         return rating_scores, student_list
 
